@@ -58,7 +58,7 @@ Example:
 
 # 5.1 Outbox
 
-An earthstar URI ending in a / should be interpreted as a prefix, and for the outbox will then follow these conventions, following the Mastadon publishing levels:
+An earthstar URI ending in a / should be interpreted as a prefix, and for the outbox will then follow these conventions, following the Mastodon publishing levels:
 
 - `outbox/public/.../<timestamp>`
 - `outbox/followers-only/.../<timestamp>`

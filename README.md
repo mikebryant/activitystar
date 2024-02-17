@@ -16,3 +16,21 @@ Why use activities / activitypub as a base?
 ACTIVITYpub + earthSTAR
 
 Naming is hard. Tell me if you have a better idea :D
+
+## How does this compare to Mastodon timelines?
+
+### Home timeline
+
+Much the same - posts from anyone you directly follow
+
+### Local / Community
+
+This is where it differs - I anticipate the existence of ssb-style `pub` servers / earthstar relays.
+
+Clients would follow a pub, and the pub follows back (pub owner does the moderation here, like a Mastodon server)
+
+So these posts would all show up in Federated too - but you could have tabs in the client for each of the pubs you follow.
+
+### Federated
+
+All the public posts that you've synced.
