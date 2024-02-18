@@ -35,6 +35,23 @@ So these posts would all show up in Federated too - but you could have tabs in t
 
 All the public posts that you've synced.
 
+## Capabilities
+
+So, we have a data format, but how do people see it?
+
+Grant capabilities to them!
+
+- The client app will need to grant capabilities to other identities using the [capability](https://github.com/earthstar-project/application-formats/pull/6) spec.
+- So the first cap is the cap for seeing capabilities, then further caps after that
+- If you're using one/many relays you'll also want them to have capabilities for everything to sync it, though not necessarily keys
+  - You want the relay to sync your follower-only messages and DMs, but not decrypt them
+  - Depending on your level of trust, you might let anyone download everything by granting a public cap, e.g. like SSB. Would mean people can see when you post, but not to who
+- It's likely you'll want to grant public access to `/capabilities`, so that can be synced everywhere, and let people pick up the relevant caps for other things
+- Also you'll probably want this for your `/actor`, and `/public/...` paths - like in Mastodon, public is public, anyone can see without auth etc.
+- Of course how do people get the initial capabilitiy even if it's signed to public?
+  - Publish it in your `/actor`?
+  - Ponder, should your list of followers/following also include their public caps to aid discovery? Not sure how else you'd be able to do the follower of follower thing like SSB
+
 ## Federation
 
 Principles:
