@@ -113,6 +113,9 @@ Theory:
     - To keep the convention with the way the fediverse works, these activities _MUST_ only be accessible by identities federated with this bridge, e.g. caps and keys
       - i.e. bridges should use the High security level. This seems fairly reasonable from a usability standpoint - the bridge is always online.
   - The owner of the bridge is responsible for moderation in the same way a fediverse server owner is, e.g. you'll get defederated if you let spam through etc.
+- From the activitypub side:
+  - When it sees activities from a new identity, it creates a new `<actor-id>` for that actor and publishes the activities there.
+  - It'll grant capabilities so the appropriate people who're using it for federation can access those outboxes.
 
 Summing up:
 - No-one else on the fediverse should see this as any different to a Mastodon instance, for example
