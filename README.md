@@ -64,7 +64,7 @@ Some ideas on what security levels might look like for an individual user
 - Grant public access to /public
 - Grant your followers access to /followers
 - Grant individual DM recipients access to individual DM paths
-- Allows people to infer the total count of followers & DM recipients you have
+- Allows people to infer the total count of followers & DM recipients you have (because of the issued capabilities)
 - Requires you & a follower or DM recipient to be online and have the other as a peer to exchange any data
 
 #### Medium security
@@ -111,6 +111,7 @@ Theory:
   - If they Reject, forwards that back into earthstar
   - If they accept, it'll start publishing their activities into it's local subspace.
     - To keep the convention with the way the fediverse works, these activities _MUST_ only be accessible by identities federated with this bridge, e.g. caps and keys
+      - i.e. bridges should use the High security level. This seems fairly reasonable from a usability standpoint - the bridge is always online.
   - The owner of the bridge is responsible for moderation in the same way a fediverse server owner is, e.g. you'll get defederated if you let spam through etc.
 
 Summing up:
