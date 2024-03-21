@@ -1,3 +1,5 @@
+This needs updating...
+
 # ActivityPub
 
 This covers the adaption from https://www.w3.org/TR/activitypub/ @ https://www.w3.org/TR/2018/REC-activitypub-20180123/
@@ -61,7 +63,7 @@ Example:
 An earthstar URI ending in a / should be interpreted as a prefix, and for the outbox will then follow these conventions, following the Mastodon publishing levels:
 
 - `outbox/public/.../<timestamp>`
-- `outbox/followers-only/.../<timestamp>`
+- `outbox/followers/.../<timestamp>`
 - `outbox/direct/<shared-id>/.../<timestamp>`
 
 Notes:

@@ -1,0 +1,5 @@
+type: Note
+content: |
+  I like things flat!
+
+  The directory structure under outbox/*/ can have arbitrary nesting, only leaves matter

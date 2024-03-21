@@ -1,0 +1,12 @@
+type: Note
+
+mediaType: text/markdown
+name: First post
+content: |
+  # My first post!
+
+  Hope you like this new social media platform :D
+
+# id: Is defined as the path to this object, so we don't duplicate it inside the object
+# attributedTo: Is defined by the actor this is posted under
+# to: Is defined by the specific outbox this is posted under
